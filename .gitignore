@@ -1,0 +1,12 @@
+node_modules/
+.wwebjs_auth/
+.wwebjs_cache/
+bot_data.sqlite
+bot_data.sqlite-*
+.env
+media/
+*.log
+.DS_Store
+npm-debug.log*
+.chrome/
+puppeteer/
