@@ -1,0 +1,11 @@
+services:
+  bot:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./bot_data.sqlite:/app/bot_data.sqlite
+      - ./.wwebjs_auth:/app/.wwebjs_auth
+    restart: unless-stopped
